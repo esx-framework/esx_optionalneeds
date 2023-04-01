@@ -1,5 +1,3 @@
-
-
 INSERT INTO `items` (`name`, `label`, `weight`) VALUES
 	('beer', 'Cerveza', 1)
 ;
