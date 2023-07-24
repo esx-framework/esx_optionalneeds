@@ -5,7 +5,7 @@ function Drunk(level, start)
   
   CreateThread(function()
 
-    local playerPed = PlayerPedId()
+    local playerPed <const> = PlayerPedId()
 
     if start then
       DoScreenFadeOut(800)
@@ -60,7 +60,7 @@ function Reality()
 
   CreateThread(function()
 
-    local playerPed = PlayerPedId()
+    local playerPed <const> = PlayerPedId()
 
     DoScreenFadeOut(800)
     Wait(1000)
@@ -148,7 +148,7 @@ end)
 RegisterNetEvent('esx_optionalneeds:onDrink')
 AddEventHandler('esx_optionalneeds:onDrink', function()
   
-  local playerPed = PlayerPedId()
+  local playerPed <const> = PlayerPedId()
   
   TaskStartScenarioInPlace(playerPed, "WORLD_HUMAN_DRINKING", 0, 1)
   Wait(1000)
